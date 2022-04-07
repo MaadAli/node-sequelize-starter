@@ -32,10 +32,9 @@ export const authenticateToken = async (req, res, next) => {
             return next();
         } else {
             throw ERRORS.UNAUTHORIZED('Token not valid', null);
-        }
-
-    } catch (err) {
-        next(ERRORS.UNAUTHORIZED('Unauthorized', null))
+    }
+  } catch (err) {
+    next(ERRORS.UNAUTHORIZED("Unauthorized", null));
     }
 }
 
