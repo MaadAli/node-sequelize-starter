@@ -1,0 +1,16 @@
+name: Tests to check code on PR
+
+on: push
+  # pull-request:
+  #   branches: [main, dev]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm ci
+    - name: Run Tests
+      run: npm run test
