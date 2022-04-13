@@ -4,6 +4,18 @@ on: push
   # pull-request:
   #   branches: [main, dev]
 
+env: 
+  ## sample env variables
+  NODE_ENV=development
+  PORT=5000
+  SQL_DB=sample
+  SQL_PORT=3306
+  SQL_HOST=127.0.0.1
+  SQL_USER=root
+  SQL_PASSWD=12345
+  CRYPT_KEY=o[]`vF(wP:u;Fxs-X)dy]6frZYlM-Try@R-f!i%{`dBFsD){nq@kdP#1`~E[XtS
+  AUTH_KEY=d56ad2536ce13875f5c21b1ac32eb25e4e41422dde6850bcff2e17d41794bfeb
+
 jobs:
   build:
     runs-on: ubuntu-latest
