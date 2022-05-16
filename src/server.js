@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
 
 app.use(routes);
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   logger.error(err);
   console.log('err----------------------------------->', err);
 

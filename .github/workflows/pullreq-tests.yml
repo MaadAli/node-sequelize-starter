@@ -1,8 +1,9 @@
-name: Tests to check code on PR
+name: Tests to check code on Push
 
-on: push
-  # pull-request:
-  #   branches: [main, dev]
+on: 
+  push:
+    branches: 
+      - main
 
 env: 
   ## sample env variables

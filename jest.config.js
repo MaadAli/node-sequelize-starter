@@ -1,4 +1,4 @@
 module.exports = {
-    verbose: true,
-    roots: ['src/tests']
+  verbose: true,
+  roots: ['src/tests']
 };

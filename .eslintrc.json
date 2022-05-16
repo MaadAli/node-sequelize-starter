@@ -1,14 +1,15 @@
 {
     "env": {
-        "browser": true,
+        // "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base",
         "eslint:recommended",
         "plugin:prettier/recommended",
-        "plugin:jest/all",
+        // "plugin:jest/all",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/recommended"
@@ -28,6 +29,9 @@
         "no-trailing-spaces": "error",
         "linebreak-style": 0,
         "comma-dangle": ["error", "never"],
+        "consistent-return":"off",
+        "no-param-reassign":"off",
+        "no-unused-vars":"warn",
         "max-len": [
             "error",
             {
@@ -37,6 +41,12 @@
               "ignoreUrls": true,
               "ignoreStrings": true,
               "ignoreTemplateLiterals": true
+            }
+          ],
+        "prettier/prettier": [
+            "error",
+            {
+              "endOfLine": "auto"
             }
           ]
     },
